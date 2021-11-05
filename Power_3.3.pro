@@ -1,6 +1,6 @@
-update=Do 04 Nov 2021 19:29:39 CET
+update=Fr 05 Nov 2021 09:23:42 CET
 version=1
-last_client=pcbnew
+last_client=kicad
 [general]
 version=1
 RootSch=
@@ -255,7 +255,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=240V
-Clearance=2.032
+Clearance=1.016
 TrackWidth=2.032
 ViaDiameter=2
 ViaDrill=1.2

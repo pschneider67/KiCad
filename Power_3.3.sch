@@ -149,7 +149,7 @@ U 1 1 6184D903
 P 6050 1750
 F 0 "J2" H 6130 1742 50  0000 L CNN
 F 1 "Conn_01x02" H 6130 1651 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6050 1750 50  0001 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.5_1x02_P3.50mm_Vertical" H 6050 1750 50  0001 C CNN
 F 3 "~" H 6050 1750 50  0001 C CNN
 	1    6050 1750
 	1    0    0    -1  
@@ -172,7 +172,7 @@ U 1 1 61851647
 P 1550 1850
 F 0 "J1" H 1468 2167 50  0000 C CNN
 F 1 "Conn_01x03" H 1468 2076 50  0000 C CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_3-G-5,08_1x03_P5.08mm_Horizontal" H 1550 1850 50  0001 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_3-G-5,08_1x03_P5.08mm_Vertical" H 1550 1850 50  0001 C CNN
 F 3 "~" H 1550 1850 50  0001 C CNN
 	1    1550 1850
 	-1   0    0    -1  
@@ -188,8 +188,6 @@ F 3 "~" H 1750 3300 50  0001 C CNN
 	1    1750 3300
 	1    0    0    -1  
 $EndComp
-Text Label 1500 2150 0    50   ~ 0
-Earth
 $Comp
 L Mechanical:MountingHole_Pad H2
 U 1 1 6183A4C5
@@ -240,15 +238,26 @@ Wire Wire Line
 Connection ~ 1750 3200
 Wire Wire Line
 	1750 1950 1750 2800
+Text Label 1750 1750 0    50   ~ 0
+L
+Text Label 1750 1850 0    50   ~ 0
+N
+Text Label 1750 1950 0    50   ~ 0
+Earth
 $Comp
-L Mechanical:MountingHole H1
-U 1 1 6183F10E
-P 950 3000
-F 0 "H1" H 1050 3000 50  0000 L CNN
-F 1 "MountingHole" H 1050 2955 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 950 3000 50  0001 C CNN
-F 3 "~" H 950 3000 50  0001 C CNN
-	1    950  3000
-	1    0    0    -1  
+L Mechanical:MountingHole_Pad H1
+U 1 1 6187259A
+P 5600 2550
+F 0 "H1" V 5600 2750 50  0000 C CNN
+F 1 "MountingHole_Pad" V 5400 3000 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 5600 2550 50  0001 C CNN
+F 3 "~" H 5600 2550 50  0001 C CNN
+	1    5600 2550
+	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	5800 2100 5800 2550
+Wire Wire Line
+	5800 2550 5700 2550
+Connection ~ 5800 2100
 $EndSCHEMATC
