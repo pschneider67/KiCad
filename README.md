@@ -1,4 +1,4 @@
-# Power_3.3
+# Platine KiCad Projekt - Power_3.3
 
 Power_3.3 ist eine kleine Platine die aus 
 240V AC - 3,3V DC / 3W 
