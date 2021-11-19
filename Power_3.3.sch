@@ -147,8 +147,8 @@ $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 6184D903
 P 6050 1750
-F 0 "J2" H 6130 1742 50  0000 L CNN
-F 1 "Conn_01x02" H 6130 1651 50  0000 L CNN
+F 0 "J2" H 6000 1900 50  0000 L CNN
+F 1 "Conn_01x02" H 6130 1651 50  0001 L CNN
 F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.5_1x02_P3.50mm_Vertical" H 6050 1750 50  0001 C CNN
 F 3 "~" H 6050 1750 50  0001 C CNN
 	1    6050 1750
@@ -170,74 +170,13 @@ $Comp
 L Connector_Generic:Conn_01x03 J1
 U 1 1 61851647
 P 1550 1850
-F 0 "J1" H 1468 2167 50  0000 C CNN
-F 1 "Conn_01x03" H 1468 2076 50  0000 C CNN
+F 0 "J1" H 1550 2100 50  0000 C CNN
+F 1 "Conn_01x03" H 1468 2076 50  0001 C CNN
 F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_3-G-5,08_1x03_P5.08mm_Vertical" H 1550 1850 50  0001 C CNN
 F 3 "~" H 1550 1850 50  0001 C CNN
 	1    1550 1850
 	-1   0    0    -1  
 $EndComp
-$Comp
-L power:Earth #PWR0101
-U 1 1 61854952
-P 1750 3300
-F 0 "#PWR0101" H 1750 3050 50  0001 C CNN
-F 1 "Earth" H 1750 3150 50  0001 C CNN
-F 2 "" H 1750 3300 50  0001 C CNN
-F 3 "~" H 1750 3300 50  0001 C CNN
-	1    1750 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H2
-U 1 1 6183A4C5
-P 1600 2800
-F 0 "H2" V 1600 3000 50  0000 C CNN
-F 1 "MountingHole_Pad" V 1400 3250 50  0001 C CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1600 2800 50  0001 C CNN
-F 3 "~" H 1600 2800 50  0001 C CNN
-	1    1600 2800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H3
-U 1 1 6183A91C
-P 1600 3000
-F 0 "H3" V 1600 3200 50  0000 C CNN
-F 1 "MountingHole_Pad" V 1400 3450 50  0001 C CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1600 3000 50  0001 C CNN
-F 3 "~" H 1600 3000 50  0001 C CNN
-	1    1600 3000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H4
-U 1 1 6183ACA3
-P 1600 3200
-F 0 "H4" V 1600 3400 50  0000 C CNN
-F 1 "MountingHole_Pad" V 1400 3650 50  0001 C CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1600 3200 50  0001 C CNN
-F 3 "~" H 1600 3200 50  0001 C CNN
-	1    1600 3200
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1750 2800 1700 2800
-Wire Wire Line
-	1750 2800 1750 3000
-Wire Wire Line
-	1750 3000 1700 3000
-Connection ~ 1750 2800
-Wire Wire Line
-	1750 3000 1750 3200
-Wire Wire Line
-	1750 3200 1700 3200
-Connection ~ 1750 3000
-Wire Wire Line
-	1750 3200 1750 3300
-Connection ~ 1750 3200
-Wire Wire Line
-	1750 1950 1750 2800
 Text Label 1750 1750 0    50   ~ 0
 L
 Text Label 1750 1850 0    50   ~ 0
@@ -247,17 +186,77 @@ Earth
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 6187259A
-P 5600 2550
-F 0 "H1" V 5600 2750 50  0000 C CNN
-F 1 "MountingHole_Pad" V 5400 3000 50  0001 C CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 5600 2550 50  0001 C CNN
-F 3 "~" H 5600 2550 50  0001 C CNN
-	1    5600 2550
+P 5100 2300
+F 0 "H1" H 5250 2250 50  0000 C CNN
+F 1 "MountingHole_Pad" V 4900 2750 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 5100 2300 50  0001 C CNN
+F 3 "~" H 5100 2300 50  0001 C CNN
+	1    5100 2300
+	-1   0    0    1   
+$EndComp
+Connection ~ 1850 2750
+Wire Wire Line
+	1850 2750 1850 2850
+Connection ~ 1850 2550
+Wire Wire Line
+	1850 2750 1800 2750
+Wire Wire Line
+	1850 2550 1850 2750
+Wire Wire Line
+	1850 2550 1800 2550
+Wire Wire Line
+	1850 2350 1850 2550
+Wire Wire Line
+	1850 2350 1800 2350
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 6183ACA3
+P 1700 2750
+F 0 "H4" V 1700 2950 50  0000 C CNN
+F 1 "MountingHole_Pad" V 1500 3200 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1700 2750 50  0001 C CNN
+F 3 "~" H 1700 2750 50  0001 C CNN
+	1    1700 2750
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 6183A91C
+P 1700 2550
+F 0 "H3" V 1700 2750 50  0000 C CNN
+F 1 "MountingHole_Pad" V 1500 3000 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1700 2550 50  0001 C CNN
+F 3 "~" H 1700 2550 50  0001 C CNN
+	1    1700 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 6183A4C5
+P 1700 2350
+F 0 "H2" V 1700 2550 50  0000 C CNN
+F 1 "MountingHole_Pad" V 1500 2800 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1700 2350 50  0001 C CNN
+F 3 "~" H 1700 2350 50  0001 C CNN
+	1    1700 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR0101
+U 1 1 61854952
+P 1850 2850
+F 0 "#PWR0101" H 1850 2600 50  0001 C CNN
+F 1 "Earth" H 1850 2700 50  0001 C CNN
+F 2 "" H 1850 2850 50  0001 C CNN
+F 3 "~" H 1850 2850 50  0001 C CNN
+	1    1850 2850
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	5800 2100 5800 2550
+	1750 1950 1850 1950
 Wire Wire Line
-	5800 2550 5700 2550
-Connection ~ 5800 2100
+	1850 1950 1850 2350
+Connection ~ 1850 2350
+Wire Wire Line
+	5100 2100 5100 2200
 $EndSCHEMATC
